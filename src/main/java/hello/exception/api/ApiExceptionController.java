@@ -31,20 +31,20 @@ public class ApiExceptionController {
         return new MemberDto(id, "hello " + id);
     }
 
-    @GetMapping("/api/response-status-ex1")
-    public String responseStatusEx1() {
-        throw new BadRequestException();
-    }
+//    @GetMapping("/api/response-status-ex1")
+//    public String responseStatusEx1() {
+//        throw new BadRequestException();
+//    }
 
-    @GetMapping("/api/response-status-ex2")
-    public String responseStatusEx2() {
-        throw new ResponseStatusException(HttpStatus.NOT_FOUND, "error.bad", new IllegalArgumentException());
-    }
+//    @GetMapping("/api/response-status-ex2")
+//    public String responseStatusEx2() {
+//        throw new ResponseStatusException(HttpStatus.NOT_FOUND, "error.bad", new IllegalArgumentException());
+//    }
 
-    @GetMapping("/api/default-handler-ex")
-    public String defaultException(@RequestParam Integer data) {
-        return "ok";
-    }
+//    @GetMapping("/api/default-handler-ex")
+//    public String defaultException(@RequestParam Integer data) {
+//        return "ok";
+//    }
 
     @Data
     @AllArgsConstructor
